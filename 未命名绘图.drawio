@@ -1,9 +1,97 @@
-<mxfile host="app.diagrams.net" modified="2024-02-06T06:45:27.468Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" version="23.0.2" etag="nNXmw-J5opfC-Ne4MXiI" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-07T04:04:56.737Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="RcE3MsX8lK6N3E7xB82B" version="23.0.2" type="github">
   <diagram name="第 1 页" id="ZTvM4OYzMrKOlo8mX1t_">
-    <mxGraphModel>
+    <mxGraphModel dx="989" dy="509" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8UjXqqB9TFLp0nYzE_tN-4" target="8UjXqqB9TFLp0nYzE_tN-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-12" value="1. Boss线程启动" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8UjXqqB9TFLp0nYzE_tN-11">
+          <mxGeometry x="-0.1736" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-4" value="启动" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="270" y="80" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8UjXqqB9TFLp0nYzE_tN-5" target="8UjXqqB9TFLp0nYzE_tN-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-10" value="2. 注册 80端口的socket" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8UjXqqB9TFLp0nYzE_tN-9">
+          <mxGeometry x="-0.1537" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-5" value="listen 80" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="270" y="200" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8UjXqqB9TFLp0nYzE_tN-6" target="8UjXqqB9TFLp0nYzE_tN-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="410" />
+              <mxPoint x="300" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-20" value="5. boss被accept事件唤醒" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8UjXqqB9TFLp0nYzE_tN-19">
+          <mxGeometry x="-0.1876" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-6" value="selector" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="270" y="330" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-8" value="启动" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="500" y="200" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="8UjXqqB9TFLp0nYzE_tN-13" target="8UjXqqB9TFLp0nYzE_tN-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-13" value="3. boss 阻塞在selector" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="290" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8UjXqqB9TFLp0nYzE_tN-14" target="8UjXqqB9TFLp0nYzE_tN-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-16" value="4. connect" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8UjXqqB9TFLp0nYzE_tN-15">
+          <mxGeometry x="-0.0658" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-14" value="Client" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="460" y="330" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8UjXqqB9TFLp0nYzE_tN-18" target="8UjXqqB9TFLp0nYzE_tN-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-23" value="6. 从IO线程池取一个&lt;br&gt;线程,和socket操作相关&lt;br&gt;都由其做处理" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8UjXqqB9TFLp0nYzE_tN-22">
+          <mxGeometry x="-0.3282" y="-1" relative="1" as="geometry">
+            <mxPoint x="39" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="8UjXqqB9TFLp0nYzE_tN-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="170" y="480" />
+              <mxPoint x="170" y="390" />
+              <mxPoint x="261" y="390" />
+              <mxPoint x="261" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-27" value="7. 继续做监听accept&lt;br&gt;还做client socket read/write的回调" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8UjXqqB9TFLp0nYzE_tN-26">
+          <mxGeometry x="-0.0889" y="1" relative="1" as="geometry">
+            <mxPoint x="-39" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-18" value="Client Socket = Accept" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="270" y="450" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8UjXqqB9TFLp0nYzE_tN-21" value="IO线程绑定" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="455" width="70" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
